@@ -5,7 +5,6 @@ import PetList from './containers/PetList';
 import PetShow from './containers/PetShow';
 import Nav from './components/Nav';
 import Home from './components/Home';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {

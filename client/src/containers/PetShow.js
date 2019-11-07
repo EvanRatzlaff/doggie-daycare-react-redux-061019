@@ -9,12 +9,11 @@ export class PetShow extends Component {
     }
 
   render() {
-    // const { name, breed, section_number } = this.state.pet;
     return (
       <div>
-        <h3>{ this.props.currentPet.name }</h3>
-        <p>Age: { this.props.currentPet.breed }</p>
-        <p>Species: { this.props.currentPet.section_number }</p>
+        <h3>{ this.props.pet.name }</h3>
+        <p>Breed: { this.props.pet.breed }</p>
+        <p>Section #: { this.props.pet.section_number }</p>
       </div>
     )
   }
@@ -22,7 +21,7 @@ export class PetShow extends Component {
 
 const mapStateToProps = state => {
     return {
-        currentPet: state.petsReducer.currentPet
+        pet: state.petsReducer.pet
     }
 }
 

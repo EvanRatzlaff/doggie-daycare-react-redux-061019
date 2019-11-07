@@ -10,7 +10,6 @@ export class Nav extends Component {
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
                         <li><Link to="/pets/new">New Dog</Link></li>
                         <li><Link to="/pets">Current Dogs</Link></li>
-                        <li><a href="collapsible.html">JavaScript</a></li>
                     </ul>
                 </div>
                 

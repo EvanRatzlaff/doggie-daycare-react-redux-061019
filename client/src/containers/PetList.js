@@ -13,7 +13,7 @@ export class PetList extends Component {
         const pets = this.props.pets.map((pet, i) => <PetItem key={i} pet={pet} />)
         return (
             <div>
-                <h2>Dog List</h2>
+                <h2>Current Dogs</h2>
                 <ul className="collection">
                     {pets}
                 </ul>

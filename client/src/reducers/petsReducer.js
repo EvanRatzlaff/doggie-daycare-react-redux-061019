@@ -1,6 +1,9 @@
+const initialState = {
+    pets: [],
+    pet: {}
+}
 
-
-const petsReducer = (state = {pets: [], currentPet: null}, action) => {
+const petsReducer = (state = initialState, action) => {
     switch(action.type) {
         case "ADD_PET":
             return {

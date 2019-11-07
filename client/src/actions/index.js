@@ -31,6 +31,7 @@ export const getPet = id => {
     return dispatch => {
         return fetch(baseUrl + '/api/pets/' + id)
         .then(response => response.json())
-        .then(pet => dispatch({type: "GET_PET", pet}))
+        .then(pet => {
+            return dispatch({type: "GET_PET", pet})})
     }
 }
